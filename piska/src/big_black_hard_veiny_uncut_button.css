@@ -1,31 +1,19 @@
-
-.big-button {
-    background-color: #000;
-    color: #ffffff;
-    font-size: 24px;
-    padding: 20px 40px;
-    border-radius: 30px;
-    border: 3px solid #000;
-    cursor: pointer; /* Add pulsating animation */
-}
-
-.big-button:hover {
-    background-color: #000000;
-    animation: pulse 0.5s infinite alternate;/* Pause the animation on hover */
-}
-
-.button-container {
+.background-text {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjust height as needed */
+    background-color: #000000;
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1); /* Normal size */
-    }
-    100% {
-        transform: scale(1.05); /* Slightly larger size */
-    }
+.transparent-button {
+    width: 5vw; /* Adjust width as needed */
+    height: 2vw; /* Adjust height as needed */
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
 }
