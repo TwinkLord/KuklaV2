@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Bumbbled - Light";
+    src: url("https://db.onlinewebfonts.com/t/520642875d99e4b6b9c4e949a21be319.eot");
+    src: url("https://db.onlinewebfonts.com/t/520642875d99e4b6b9c4e949a21be319.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/520642875d99e4b6b9c4e949a21be319.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/520642875d99e4b6b9c4e949a21be319.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/520642875d99e4b6b9c4e949a21be319.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/520642875d99e4b6b9c4e949a21be319.svg#Bumbbled - Light") format("svg");
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh; /* Ensure container takes full height of viewport */
+    margin: 0;
+    overflow: hidden; /* Add overflow to hide content outside container */
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 0;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 10vw;
+    z-index: 1;
+    text-decoration: none; /* Optional: remove underline */
+    font-family: "Bumbbled - Light";
+    cursor: pointer; /* Add cursor pointer */
+}
+
+.slide-up {
+    animation: slideUp 1s forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}

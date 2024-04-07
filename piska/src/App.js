@@ -1,5 +1,5 @@
 import './App.css';
-import IntroPage from "./IntroPage";
+import IntroPage from "./IntroPage/IntroPage";
 
 function App() {
 
